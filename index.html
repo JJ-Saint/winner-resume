@@ -26,7 +26,7 @@
     top: 0; 
     width: 100%; 
     z-index: 100; 
-    padding: 22px 0; 
+    padding: 10px 10px; 
     transition: background .5s, padding .4s;
     background:transparent;
     backdrop-filter: blur(14px);
@@ -76,7 +76,7 @@
     display: block; 
     width: 22px; 
     height: 1.5px; 
-    background: #000000; 
+    background: #ffffff; 
     margin: 5px 0;
     transition: background .3s;
 }
@@ -100,15 +100,15 @@
         .hero-split-r { flex: 1; background: url('./img2.png') center/cover no-repeat; }
         .hero-divider { position: absolute; top: 0; bottom: 55%; left: 50%; width: 2px; background: var(--red); z-index: 3; }
         .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,12,16,1) 0%, rgba(8,12,16,.72) 45%, rgba(8,12,16,.25) 100%); }
-        .hero-text { position: relative; z-index: 2; max-width: 720px; }
-        .hero-eyebrow { font-size: .66rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gray); margin-bottom: 18px; font-weight: 400; }
-        .hero-h1 { font-family: 'Syne', ; font-size: clamp(4rem, 6vw, 5.6rem); font-weight: 800; line-height: 1.02; color: var(--white); margin-bottom: 22px; }
-        .hero-h1 em { color: var(--red); font-style: normal; }
-        .hero-sub { font-size: .92rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300; }
-        .btn-red { background: var(--red); color: var(--white); font-size: .78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; transition: background .25s, transform .2s; }
-        .btn-red:hover { background: #ff2200; color: var(--white); transform: translateY(-1px); }
-        .btn-ghost { background: transparent; color: rgba(245,244,240,.6); font-size: .78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(245,244,240,.18); padding: 14px 30px; text-decoration: none; display: inline-block; transition: border-color .25s, color .25s; }
-        .btn-ghost:hover { border-color: rgba(245,244,240,.55); color: var(--white); }
+        .hero-text { position: relative; z-index: 2; max-width: 900px; }
+        .hero-eyebrow { font-size: .86rem; letter-spacing: 3px; text-transform: uppercase; color: rgb(255, 255, 255); margin-bottom: 18px; font-weight: 400;margin-left: 235px; text-shadow: 2px 2px 10px rgb(255, 0, 0);}
+        .hero-h1 { font-family: 'Syne', ; font-size: clamp(4rem, 6vw, 5.6rem); font-weight: 800; line-height: 1.02; color: var(--white); margin-bottom: 22px;margin-left: 46px; }
+        .hero-h1 em { color: rgba(255, 24, 24, 0.79);font-style: normal;margin-left: 172px;text-shadow: 2px 2px 60px white; }
+        .hero-sub { font-size: .92rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300;margin-left: 195px; }
+        .btn-red { background: var(--red); color: var(--white); font-size: .78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; transition: background .25s, transform .2s;margin-left: 187px; }
+        .btn-red:hover { background: #ff2200; color: var(--white);transform: scale(1.07);transition: 1s;border-radius: 0px; }
+        .btn-ghost { background: transparent; color: rgba(245,244,240,.6); font-size: .78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(245,244,240,.18); padding: 14px 30px; text-decoration: none; display: inline-block; transition: border-color .25s, color .25s;margin-left: 15px; }
+        .btn-ghost:hover { border-color: rgba(245,244,240,.55); color: var(--white);transform: scale(1.07);transition: 1s; }
         .hero-scroll { position: absolute; bottom: 32px; right: 0; writing-mode: vertical-rl; font-size: .6rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(245,244,240,.18); z-index: 2; display: flex; align-items: center; gap: 10px; }
         .hero-scroll::before { content: ''; width: 1px; height: 40px; background: rgba(245,244,240,.1); }
 
@@ -226,7 +226,14 @@
         @media (max-width: 768px) {
             section { padding: 80px 0; }
             .nav-links { display: none !important; }
-            .hero-h1 { font-size: 2.5rem; }
+            .hero-h1 { font-size: 2.5rem;width: 410px; }
+            .btn-red{margin-left: 40px;}
+            .btn-ghost{margin-left: 120px;}
+            .hero-text{margin-bottom: 100px;}
+            .ham.d-md-none{margin-right: 40px;}
+            .hero-eyebrow{margin-left:10px;width: 100%;}
+            .hero-sub{ margin-left: 0px;width: 410px;}
+            .hero-h1 em{margin-left: 5px; width: 600px;} 
             .svc-desc { display: none; }
             .oferta-box { padding: 32px 24px; }
             .pitzon-box { flex-direction: column; gap: 24px; }
@@ -275,11 +282,11 @@
     <div class="hero-scroll">Scroll</div>
     <div class="container hero-text">
         <p class="hero-eyebrow rv">Taller Automotriz — Medellín, Colombia</p>
-        <h1 class="hero-h1 rv d1">Mecánica automotriz<br>con diagnóstico claro<br><em>y evidencia.</em></h1>
-        <p class="hero-sub rv d2">En MedecaR revisamos, diagnosticamos y reparamos tu vehículo con un proceso transparente: evidencia, explicación clara y autorización antes de intervenir.</p>
+        <h1 class="hero-h1 rv d1">Mecánica Automotriz<br>Con Diagnóstico Claro<br><em>Y Evidencia</em></h1>
+        <p class="hero-sub rv d2">En MedecaR Revisamos, Diagnosticamos Y Reparamos Tu Vehículo Con Un Proceso Transparente: Evidencia, Explicación Clara Y Autorización Antes De Intervenir.</p>
         <div class="d-flex gap-3 flex-wrap rv d3">
-            <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar revisión por WhatsApp</a>
-            <a href="#servicios" class="btn-ghost">Ver servicios</a>
+            <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar Revisión Por WhatsApp</a>
+            <a href="#servicios" class="btn-ghost">Ver Servicios</a>
         </div>
     </div>
 </section>
