@@ -69,7 +69,8 @@
     text-transform: uppercase; 
     transition: background .25s !important; 
 }
-.nav-cta:hover { background: #ff2200 !important; }
+
+.nav-cta:hover { background: #ff2200 !important; transform: scale(1.07); transition: 1s; }
 
 .ham { background: none; border: none; padding: 4px; cursor: pointer; }
 .ham span { 
@@ -103,9 +104,9 @@
         .hero-text { position: relative; z-index: 2; max-width: 900px; }
         .hero-eyebrow { font-size: .86rem; letter-spacing: 3px; text-transform: uppercase; color: rgb(255, 255, 255); margin-bottom: 18px; font-weight: 400;margin-left: 235px; text-shadow: 2px 2px 10px rgb(255, 0, 0);}
         .hero-h1 { font-family: 'Syne', ; font-size: clamp(4rem, 6vw, 5.6rem); font-weight: 800; line-height: 1.02; color: var(--white); margin-bottom: 22px;margin-left: 46px; }
-        .hero-h1 em { color: rgba(255, 24, 24, 0.79);font-style: normal;margin-left: 172px;text-shadow: 2px 2px 60px white; }
-        .hero-sub { font-size: .92rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300;margin-left: 195px; }
-        .btn-red { background: var(--red); color: var(--white); font-size: .78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; transition: background .25s, transform .2s;margin-left: 187px; }
+        .hero-h1 em { color: rgb(255, 0, 0);font-style: normal;margin-left: 172px;text-shadow: 2px 2px 60px rgb(255, 0, 0); }
+        .hero-sub { font-size: .98rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300;margin-left: 195px; }
+        .btn-red { background: var(--red); color: var(--white); font-size: .78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; transition: background .25s, transform .2s;margin-left: 177px; }
         .btn-red:hover { background: #ff2200; color: var(--white);transform: scale(1.07);transition: 1s;border-radius: 0px; }
         .btn-ghost { background: transparent; color: rgba(245,244,240,.6); font-size: .78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(245,244,240,.18); padding: 14px 30px; text-decoration: none; display: inline-block; transition: border-color .25s, color .25s;margin-left: 15px; }
         .btn-ghost:hover { border-color: rgba(245,244,240,.55); color: var(--white);transform: scale(1.07);transition: 1s; }
@@ -121,7 +122,7 @@
 
         /* ── DIFERENCIAL ── */
         #diferencial { background: var(--surface); border-top: 1px solid rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.04); padding: 72px 0; }
-        .dif-text { font-family: 'Syne', sans-serif; font-size: clamp(1.1rem, 2.2vw, 1.5rem); font-weight: 700; color: rgba(245,244,240,.9); line-height: 1.4; border-left: 2px solid var(--red); padding-left: 24px; }
+        .dif-text { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 2.2vw, 1.5rem); font-weight: 700; color: rgba(245,244,240,.9); line-height: 1.4; border-left: 2px solid var(--red); padding-left: 24px;width: 900px; }
         .dif-sub { font-size: .88rem; color: rgba(245,244,240,.38); line-height: 1.85; font-weight: 300; }
 
         /* ── NOSOTROS / MISIÓN ── */
@@ -296,7 +297,7 @@
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-6 rv-l">
-                <p class="dif-text">En MedecaR no cambiamos piezas por probar. Revisamos, diagnosticamos, documentamos con evidencia, explicamos prioridades y pedimos autorización antes de intervenir el vehículo.</p>
+                <p class="dif-text">En MedecaR No Cambiamos Piezas Por Probar. Revisamos, Diagnosticamos, Documentamos Con Evidencia, Explicamos Prioridades Y Pedimos Autorización Antes De Intervenir El Vehículo.</p>
             </div>
             <div class="col-lg-6 rv-r">
                 
@@ -312,8 +313,8 @@
             <div class="col-lg-5 rv-l">
                 <div class="position-relative">
                     <span class="nos-ghost">MC</span>
-                    <span class="label">Quiénes somos</span>
-                    <h2 class="title">El taller que<br>explica antes<br>de intervenir.</h2>
+                    <span class="label">Quiénes Somos</span>
+                    <h2 class="title">El Taller Que<br>Explica Antes<br>De Intervenir.</h2>
                 </div>
             </div>
             <div class="col-lg-7 rv-r">
@@ -321,12 +322,12 @@
 
                 <div class="mvv-block">
                     <div class="mvv-label">Misión</div>
-                    <p class="mvv-text">Generar una experiencia de total confianza a través de soluciones preventivas y correctivas de alta calidad, superando las expectativas de cada cliente.</p>
+                    <p class="mvv-text">Generar Una Experiencia De Total Confianza A Través De Soluciones Preventivas Y Correctivas De Alta Calidad, Superando Las Expectativas De Cada Cliente.</p>
                 </div>
 
                 <div class="mvv-block">
                     <div class="mvv-label">Visión</div>
-                    <p class="mvv-text">Ser el taller referente en Medellín y el área metropolitana para 2030, reconocidos por transparencia, calidad y satisfacción del cliente.</p>
+                    <p class="mvv-text">Ser El Taller Referente En Medellín Y El Área Metropolitana Para 2030, Reconocidos Por Transparencia, Calidad Y Satisfacción Del Cliente.</p>
                 </div>
 
                 <div class="mvv-block">
@@ -349,10 +350,10 @@
             <div class="col-lg-4 rv-l">
                 <span class="label">Experiencia</span>
                 <div class="exp-num">15+</div>
-                <div class="exp-lbl">Años en mecánica automotriz</div>
+                <div class="exp-lbl">Años En Mecánica Automotriz</div>
             </div>
             <div class="col-lg-8 rv-r">
-                <p class="body-t">Con más de 15 años de experiencia, en MedecaR atendemos vehículos Mazda, Chevrolet, Renault, Nissan y otras marcas. Actualmente estamos fortaleciendo nuestra especialización en Mazda, con enfoque en mantenimiento preventivo, diagnóstico documentado y soluciones técnicas claras.</p>
+                <p class="body-t">Con Más De 15 Años De Experiencia, En MedecaR Atendemos Vehículos Mazda, Chevrolet, Renault, Nissan Y Otras Marcas. Actualmente Estamos Fortaleciendo Nuestra Especialización En Mazda, Con Enfoque En Mantenimiento Preventivo, Diagnóstico Documentado Y Soluciones Técnicas Claras.</p>
             </div>
         </div>
         <div class="row rv d1">
@@ -360,7 +361,7 @@
                 <div class="marca-row">
                     <div class="marca-dot"></div>
                     <span class="marca-name featured">Mazda</span>
-                    <span class="marca-badge">Especialización prioritaria</span>
+                    <span class="marca-badge">Especialización Prioritaria</span>
                 </div>
                 <div class="marca-row">
                     <div class="marca-dot" style="background:rgba(255,255,255,.2)"></div>
@@ -382,12 +383,12 @@
 <!-- ── OFERTA PRINCIPAL ── -->
 <section id="oferta">
     <div class="container rv">
-        <span class="label">Oferta principal</span>
+        <span class="label">Oferta Principal</span>
         <div class="oferta-box">
-            <span class="oferta-tag">Servicio recomendado</span>
-            <h2 class="oferta-title">Revisión preventiva 360°</h2>
-            <p class="oferta-body">Detectamos desgastes, fugas, ruidos, fallas electrónicas y puntos críticos antes de que se conviertan en reparaciones mayores. Te entregamos un diagnóstico claro con evidencia y prioridades definidas.</p>
-            <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar revisión preventiva por WhatsApp</a>
+            <span class="oferta-tag">Servicio Recomendado</span>
+            <h2 class="oferta-title">Revisión Preventiva 360°</h2>
+            <p class="oferta-body">Detectamos Desgastes, Fugas, Ruidos, Fallas Electrónicas Y Puntos Críticos Antes De Que Se Conviertan En Reparaciones Mayores. Te Entregamos Un Diagnóstico Claro Con Evidencia Y Prioridades Definidas.</p>
+            <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar Revisión Preventiva Por WhatsApp</a>
         </div>
     </div>
 </section>
@@ -397,7 +398,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-5 rv">
-                <span class="label">Lo que hacemos</span>
+                <span class="label">Lo Que Hacemos</span>
                 <h2 class="title">Servicios</h2>
             </div>
         </div>
@@ -405,16 +406,16 @@
             <div class="svc">
                 <span class="svc-idx">01</span>
                 <div class="svc-body">
-                    <div class="svc-name">Revisión preventiva 360°</div>
-                    <div class="svc-desc">Revisión completa del vehículo para detectar desgastes, fugas y fallas antes de que se conviertan en problemas mayores. El servicio de entrada recomendado.</div>
+                    <div class="svc-name">Revisión Preventiva 360°</div>
+                    <div class="svc-desc">Revisión Completa Del Vehículo Para Detectar Desgastes, Fugas Y Fallas Antes De Que Se Conviertan En Problemas Mayores. El Servicio De Entrada Recomendado.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">02</span>
                 <div class="svc-body">
-                    <div class="svc-name">Diagnóstico electrónico y escáner</div>
-                    <div class="svc-desc">No solo pasamos el escáner. Interpretamos los resultados con criterio técnico y te explicamos qué significan los códigos de falla en tu vehículo.</div>
+                    <div class="svc-name">Diagnóstico Electrónico Y Escáner</div>
+                    <div class="svc-desc">No Solo Pasamos El Escáner. Interpretamos Los Resultados Con Criterio Técnico Y Te Explicamos Qué Significan Los Códigos De Falla En Tu Vehículo.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
@@ -422,47 +423,47 @@
                 <span class="svc-idx">03</span>
                 <div class="svc-body">
                     <div class="svc-name">Mantenimiento Mazda</div>
-                    <div class="svc-desc">Servicio especializado para vehículos Mazda con foco en mantenimiento preventivo y diagnóstico documentado. Nuestra especialización en crecimiento.</div>
+                    <div class="svc-desc">Servicio Especializado Para Vehículos Mazda Con Foco En Mantenimiento Preventivo Y Diagnóstico Documentado. Nuestra Especialización En Crecimiento.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">04</span>
                 <div class="svc-body">
-                    <div class="svc-name">Sistema de refrigeración</div>
-                    <div class="svc-desc">Revisión preventiva y correctiva del sistema de enfriamiento. Un servicio frecuente y rentable que evita daños mayores al motor.</div>
+                    <div class="svc-name">Sistema De Refrigeración</div>
+                    <div class="svc-desc">Revisión Preventiva Y Correctiva Del Sistema De Enfriamiento. Un Servicio Frecuente Y Rentable Que Evita Daños Mayores Al Motor.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">05</span>
                 <div class="svc-body">
-                    <div class="svc-name">Frenos y suspensión</div>
-                    <div class="svc-desc">Diagnóstico y corrección del sistema de seguridad activa. Ruidos, vibraciones e inestabilidad tienen una causa. La encontramos antes de que empeore.</div>
+                    <div class="svc-name">Frenos Y Suspensión</div>
+                    <div class="svc-desc">Diagnóstico Y Corrección Del Sistema De Seguridad Activa. Ruidos, Vibraciones E Inestabilidad Tienen Una Causa. La Encontramos Antes De Que Empeore.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">06</span>
                 <div class="svc-body">
-                    <div class="svc-name">Cambio de aceite y mantenimiento por kilometraje</div>
-                    <div class="svc-desc">Servicio de entrada y fidelización. Lubricantes correctos, filtros adecuados y revisión de niveles incluida. Rápido y bien hecho.</div>
+                    <div class="svc-name">Cambio De Aceite Y Mantenimiento Por Kilometraje</div>
+                    <div class="svc-desc">Servicio De Entrada Y Fidelización. Lubricantes Correctos, Filtros Adecuados Y Revisión De Niveles Incluida. Rápido Y Bien Hecho.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">07</span>
                 <div class="svc-body">
-                    <div class="svc-name">Afinación e inyección</div>
-                    <div class="svc-desc">Problemas de consumo, pérdida de fuerza o rendimiento bajo. Revisamos el sistema de combustible y los inyectores con criterio técnico.</div>
+                    <div class="svc-name">Afinación E Inyección</div>
+                    <div class="svc-desc">Problemas De Consumo, Pérdida De Fuerza O Rendimiento Bajo. Revisamos El Sistema De Combustible Y Los Inyectores Con Criterio Técnico.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
             <div class="svc">
                 <span class="svc-idx">08</span>
                 <div class="svc-body">
-                    <div class="svc-name">Correas, soportes y fugas</div>
-                    <div class="svc-desc">Dolores comunes que pueden convertirse en daños mayores si se ignoran. Los detectamos a tiempo y te explicamos las prioridades antes de intervenir.</div>
+                    <div class="svc-name">Correas, Soportes Y Fugas</div>
+                    <div class="svc-desc">Dolores Comunes Que Pueden Convertirse En Daños Mayores Si Se Ignoran. Los Detectamos A Tiempo Y Te Explicamos Las Prioridades Antes De Intervenir.</div>
                 </div>
                 <span class="svc-arr">&#8599;</span>
             </div>
@@ -475,67 +476,67 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-5 rv">
-                <span class="label">Así trabajamos</span>
-                <h2 class="title">El proceso<br>MedecaR</h2>
+                <span class="label">Así Trabajamos</span>
+                <h2 class="title">El Proceso<br>MedecaR</h2>
             </div>
             <div class="col-lg-6 rv-r d1">
-                <p class="body-t" style="margin-top: 8px;">Cada vehículo que entra a MedecaR sigue el mismo proceso. Sin atajos, sin sorpresas, sin cambiar piezas por probar.</p>
+                <p class="body-t" style="margin-top: 8px;">Cada Vehículo Que Entra A MedecaR Sigue El Mismo Proceso. Sin Atajos, Sin Sorpresas, Sin Cambiar Piezas Por Probar.</p>
             </div>
         </div>
         <div class="rv d2">
             <div class="step">
                 <span class="step-n">01</span>
                 <div class="step-text">
-                    <div class="step-title">Recibimos tu vehículo y escuchamos tu necesidad.</div>
+                    <div class="step-title">Recibimos Tu Vehículo Y Escuchamos Tu Necesidad.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">02</span>
                 <div class="step-text">
-                    <div class="step-title">Creamos una orden de trabajo digital.</div>
+                    <div class="step-title">Creamos Una Orden De Trabajo Digital.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">03</span>
                 <div class="step-text">
-                    <div class="step-title">Realizamos revisión, diagnóstico y pruebas necesarias.</div>
+                    <div class="step-title">Realizamos Revisión, Diagnóstico Y Pruebas Necesarias.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">04</span>
                 <div class="step-text">
-                    <div class="step-title">Documentamos hallazgos con evidencia.</div>
+                    <div class="step-title">Documentamos Hallazgos Con Evidencia.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">05</span>
                 <div class="step-text">
-                    <div class="step-title">Te explicamos prioridades.</div>
+                    <div class="step-title">Te Explicamos Prioridades.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">06</span>
                 <div class="step-text">
-                    <div class="step-title">Cotizamos y esperamos tu autorización.</div>
+                    <div class="step-title">Cotizamos Y Esperamos Tu Autorización.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">07</span>
                 <div class="step-text">
-                    <div class="step-title">Realizamos la reparación aprobada.</div>
+                    <div class="step-title">Realizamos La reparación Aprobada.</div>
                     
                 </div>
             </div>
             <div class="step">
                 <span class="step-n">08</span>
                 <div class="step-text">
-                    <div class="step-title">Probamos, controlamos calidad y entregamos.</div>
+                    <div class="step-title">Probamos, Controlamos Calidad Y Entregamos.</div>
                     
                 </div>
             </div>
@@ -546,14 +547,14 @@
 <!-- ── PITZON ── -->
 <div id="pitzon">
     <div class="container rv">
-        <span class="label">Gestiona tu vehículo</span>
+        <span class="label">Gestiona Tu Vehículo</spa>
         <div class="pitzon-box">
             <div class="pitzon-icon">📱</div>
             <div class="pitzon-body">
-                <div class="pitzon-title">Descarga la app Pitzon</div>
-                <p class="pitzon-desc">Con Pitzon puedes consultar el historial de servicios de tu vehículo, tener datos importantes a la mano y agendar tus próximas citas con MedecaR.</p>
+                <div class="pitzon-title">Descarga La App Pitzon</div>
+                <p class="pitzon-desc">Con Pitzon Puedes Consultar El Historial De Servicios De Tu Vehículo, Tener Datos Importantes A La Mano Y Agendar Tus Próximas Citas Con MedecaR.</p>
             </div>
-            <a href="https://pitzon.io/app-download" target="_blank" class="btn-pitzon">Descargar app Pitzon</a>
+            <a href="https://pitzon.io/app-download" target="_blank" class="btn-pitzon">Descargar App Pitzon</a>
         </div>
     </div>
 </div>
@@ -563,11 +564,11 @@
     <div class="container">
         <div class="row align-items-center g-4">
             <div class="col-lg-8 rv-l">
-                <h2 class="band-title">¿Tu carro tiene algo raro?<br>Escríbenos. Te decimos qué tiene.</h2>
-                <p class="band-sub">Diagnóstico claro, evidencia y autorización antes de intervenir.</p>
+                <h2 class="band-title">¿Tu Carro Tiene Algo Raro?<br>Escríbenos. Te Decimos Qué Tiene.</h2>
+                <p class="band-sub">Diagnóstico Claro, Evidencia Y Autorización Antes De Intervenir.</p>
             </div>
             <div class="col-lg-4 text-lg-end rv-r">
-                <a href="https://wa.me/573017312645" target="_blank" class="btn-band">Contactar por WhatsApp</a>
+                <a href="https://wa.me/573017312645" target="_blank" class="btn-band">Contactar Por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -620,7 +621,7 @@
 <footer>
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
         <div class="foot-brand">Mede<em>caR</em></div>
-        <div class="foot-copy">Medellín, Colombia &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Todos los derechos reservados</div>
+        <div class="foot-copy">Medellín, Colombia &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Todos Los Derechos Reservados</div>
     </div>
 </footer>
 
