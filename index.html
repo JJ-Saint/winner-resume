@@ -159,7 +159,7 @@
         .svc:hover .svc-arr { opacity: 1; transform: translateX(0); }
         .svc-idx { font-size: .65rem; letter-spacing: 2px; color: var(--red); font-weight: 500; min-width: 26px; padding-top: 3px; }
         .svc-body { flex: 1; }
-        .svc-name { font-family: 'Syne', sans-serif; font-size: clamp(3rem, 2.8vw, 2rem); font-weight: 700; color: rgba(245,244,240,.55); transition: color .3s; line-height: 1.1; margin-bottom: 6px; }
+        .svc-name { font-family: 'Syne', sans-serif; font-size: clamp(1.5rem, 5vw, 3rem); font-weight: 700; color: rgba(245,244,240,.55); transition: color .3s; line-height: 1.1; margin-bottom: 6px; }
         .svc-desc { font-size: 1.15rem; color: rgba(245,244,240,.28); line-height: 1.7; font-weight: 300; max-width: 720px; }
         .svc-arr { font-size: 1rem; color: var(--red); opacity: 0; transform: translateX(-8px); transition: opacity .3s, transform .3s; padding-top: 3px; flex-shrink: 0; }
 
@@ -239,22 +239,69 @@
         .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
 
 
+   /* ── TABLET (hasta 1024px) ── */
+   @media (max-width: 1024px) {
+            .hero-h1 {
+                font-size: clamp(2.6rem, 6vw, 3.6rem);
+                width: 100%;
+                max-width: 100%;
+                margin-left: 32px;
+            }
+            .hero-h1 .mecanica {
+                width: auto;
+                max-width: 100%;
+                margin-left: 0;
+                display: inline;
+            }
+            .hero-h1 em { margin-left: 0; }
+            .hero-eyebrow { margin-left: 32px; width: 100%; }
+            .hero-sub { margin-left: 32px; width: 100%; max-width: 100%; }
+            .btn-red { margin-left: 32px; }
+            .btn-ghost { margin-left: 8px; }
+            .dif-text { width: 100%; max-width: 100%; }
+            .body-t { width: 100%; max-width: 100%; margin-left: 0; }
+            .band-sub { width: 100%; max-width: 100%; }
+            .nos-ghost { font-size: 18rem; }
+            .foot-brand img { width: 180px; height: auto; }
+        }
+
+   /* ── MOBILE (hasta 768px) ── */
    @media (max-width: 768px) {
             section { padding: 80px 0; }
             .nav-links { display: none !important; }
-            .hero-h1 { font-size: 2.5rem;width: 410px; }
-            .btn-red{margin-left: 40px;}
-            .btn-ghost{margin-left: 120px;}
-            .hero-text{margin-bottom: 100px;}
-            .ham.d-md-none{margin-right: 40px;}
-            .hero-eyebrow{margin-left:10px;width: 100%;}
-            .hero-sub{ margin-left: 0px;width: 410px;}
-            .hero-h1 em{margin-left: 5px; width: 600px;} 
+
+            .hero-text { padding-left: 24px; padding-right: 24px; margin-bottom: 100px; }
+            .hero-eyebrow { margin-left: 0; width: 100%; }
+            .hero-h1 {
+                font-size: clamp(2rem, 9vw, 2.8rem);
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+            }
+            .hero-h1 .mecanica {
+                width: auto;
+                max-width: 100%;
+                margin-left: 0;
+                display: inline;
+                background-color: transparent;
+            }
+            .hero-h1 em { margin-left: 0; width: 100%; max-width: 100%; display: inline-block; }
+            .hero-sub { margin-left: 0; width: 100%; max-width: 100%; }
+            .btn-red { margin-left: 0; }
+            .btn-ghost { margin-left: 0; }
+            .ham.d-md-none { margin-right: 40px; }
+
+            .dif-text { width: 100%; max-width: 100%; font-size: 1.3rem; }
+            .body-t { width: 100%; max-width: 100%; margin-left: 0; font-size: .95rem; }
+            .band-sub { width: 100%; max-width: 100%; }
+            .nos-ghost { font-size: 9rem; }
+            .exp-num { font-size: 3.5rem; }
+            .foot-brand img { width: 140px; height: auto; }
+
             .svc-desc { display: none; }
             .oferta-box { padding: 32px 24px; }
             .pitzon-box { flex-direction: column; gap: 24px; }
             .nav-brand img { height: 32px; width: auto; }
-            .nav-links { display: none !important; }
             #navbar { padding: 14px 0; }
         }
     </style>
@@ -298,7 +345,7 @@
     <div class="hero-scroll">Scroll</div>
     <div class="container hero-text">
         <p class="hero-eyebrow rv">Taller Automotriz — Medellín, Colombia</p>
-        <h1 class="hero-h1 rv d1"><span class="mecanica">Mecánica Automotriz</span>Con Diagnóstico Claro<em>Y Evidencia</em></h1>
+        <h1 class="hero-h1 rv d1"><span class="mecanica">Mecánica Automotriz</span> Con Diagnóstico Claro <em>Y Evidencia</em></h1>
         <p class="hero-sub rv d2">En MedecaR Revisamos, Diagnosticamos Y Reparamos Tu Vehículo Con Un Proceso Transparente: Evidencia, Explicación Clara Y Autorización Antes De Intervenir.</p>
         <div class="d-flex gap-3 flex-wrap rv d3">
             <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar Revisión Por WhatsApp</a>
