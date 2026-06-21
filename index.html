@@ -103,9 +103,12 @@
         .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,12,16,1) 0%, rgba(8,12,16,.72) 45%, rgba(8,12,16,.25) 100%); }
         .hero-text { position: relative; z-index: 2; max-width: 900px; }
         .hero-eyebrow { font-size: .86rem; letter-spacing: 3px; text-transform: uppercase; color: rgb(255, 255, 255); margin-bottom: 18px; font-weight: 400;margin-left: 235px; text-shadow: 2px 2px 10px rgb(255, 0, 0);}
-        .hero-h1 { font-family: 'Syne', ; font-size: clamp(4rem, 6vw, 5.6rem); font-weight: 800; line-height: 1.02; color: var(--white); margin-bottom: 22px;margin-left: 46px; }
-        .hero-h1 em { color: rgb(255, 0, 0);font-style: normal;margin-left: 172px;text-shadow: 2px 2px 60px rgb(255, 0, 0); }
-        .hero-sub { font-size: .98rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300;margin-left: 195px; }
+        .hero-h1 { font-family: 'Syne',sans-serif ; font-size: clamp(3rem, 4.5vw, 18rem); font-weight: 800; line-height: 1.02; color: var(--white); margin-bottom: 22px;margin-left: 46px;width: 1000px; }
+        
+        
+        .hero-h1 em { color: rgb(255, 0, 0);font-style: normal;margin-left: 12px;text-shadow: 2px 2px 60px rgb(255, 0, 0); }
+        .hero-h1 .mecanica{ background-color: #ffffff15;margin-left: -100px;width: 1000px;display: flex;}        
+        .hero-sub { font-size: 0.98rem; color: rgb(255, 255, 255); line-height: 1.8; max-width: 520px; margin-bottom: 36px; font-weight: 300;margin-left: 195px; }
         .btn-red { background: var(--red); color: var(--white); font-size: .78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 15px 32px; text-decoration: none; display: inline-block; transition: background .25s, transform .2s;margin-left: 177px; }
         .btn-red:hover { background: #ff2200; color: var(--white);transform: scale(1.07);transition: 1s;border-radius: 0px; }
         .btn-ghost { background: transparent; color: rgba(245,244,240,.6); font-size: .78rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(245,244,240,.18); padding: 14px 30px; text-decoration: none; display: inline-block; transition: border-color .25s, color .25s;margin-left: 15px; }
@@ -127,26 +130,28 @@
 
         /* ── NOSOTROS / MISIÓN ── */
         #nosotros { background: var(--dark); }
-        .nos-ghost { font-family: 'Syne', sans-serif; font-size: 7rem; font-weight: 800; color: rgba(255,255,255,.025); line-height: 1; position: absolute; top: -10px; right: 0; pointer-events: none; user-select: none; }
+        .nos-ghost { font-family: 'Syne', sans-serif; font-size:39rem; font-weight: 800; color: rgba(255,255,255,.025); line-height: 1; position: absolute; top: -10px; right: 0; pointer-events: none; user-select: none; }
         .mvv-block { padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
         .mvv-block:last-child { border-bottom: none; }
-        .mvv-label { font-size: .64rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; font-weight: 500; }
-        .mvv-text { font-size: .9rem; color: rgba(245,244,240,.52); line-height: 1.8; font-weight: 300; max-width: 480px; }
+        .mvv-label { font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; font-weight: 500; }
+        .mvv-text { font-size: 0.95rem; color: rgba(245,244,240,.52); line-height: 1.8; font-weight: 300; max-width: 480px; }
         .value-pill { display: inline-block; font-size: .66rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: rgba(245,244,240,.6); border: 1px solid rgba(255,255,255,.1); padding: 6px 14px; margin: 4px 4px 0 0; }
 
         /* ── EXPERIENCIA ── */
         #experiencia { background: #0a0e13; }
         .exp-num { font-family: 'Syne', sans-serif; font-size: 5rem; font-weight: 800; color: var(--red); line-height: 1; }
-        .exp-lbl { font-size: .7rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gray); margin-top: 6px; }
+        .body-t{background-color: #25d36500;font-size: 20px;width: 600px;margin-left: 110px}
+        .exp-lbl {font-size: .8rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gray); margin-top: 6px; }
         .marca-row { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
-        .marca-row:first-child { border-top: 1px solid rgba(255,255,255,.05); }
+        .marca-row:first-child { border-top: 1px solid rgb(244, 26, 26); }
         .marca-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
-        .marca-name { font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700; color: rgba(245,244,240,.7); flex: 1; }
+        .marca-name { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 700; color: rgba(245,244,240,.7); flex: 1; }
         .marca-name.featured { color: var(--white); }
-        .marca-badge { font-size: .6rem; letter-spacing: 2px; text-transform: uppercase; color: var(--red); border: 1px solid rgba(224,26,0,.3); padding: 3px 10px; font-weight: 600; }
+        .marca-badge { font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--red); border: 1px solid rgba(224,26,0,.3); padding: 3px 10px; font-weight: 600; }
 
         /* ── SERVICIOS ── */
         #servicios { background: var(--dark); }
+        .title{font-size: 2.89;}
         .svc { padding: 34px 0; border-bottom: 1px solid rgba(255,255,255,.05); display: flex; align-items: flex-start; gap: 24px; transition: padding-left .3s; cursor: default; }
         .svc:first-child { border-top: 1px solid rgba(255,255,255,.05); }
         .svc:hover { padding-left: 10px; }
@@ -154,8 +159,8 @@
         .svc:hover .svc-arr { opacity: 1; transform: translateX(0); }
         .svc-idx { font-size: .65rem; letter-spacing: 2px; color: var(--red); font-weight: 500; min-width: 26px; padding-top: 3px; }
         .svc-body { flex: 1; }
-        .svc-name { font-family: 'Syne', sans-serif; font-size: clamp(1.25rem, 2.8vw, 2rem); font-weight: 700; color: rgba(245,244,240,.55); transition: color .3s; line-height: 1.1; margin-bottom: 6px; }
-        .svc-desc { font-size: 1rem; color: rgba(245,244,240,.28); line-height: 1.7; font-weight: 300; max-width: 420px; }
+        .svc-name { font-family: 'Syne', sans-serif; font-size: clamp(3rem, 2.8vw, 2rem); font-weight: 700; color: rgba(245,244,240,.55); transition: color .3s; line-height: 1.1; margin-bottom: 6px; }
+        .svc-desc { font-size: 1.15rem; color: rgba(245,244,240,.28); line-height: 1.7; font-weight: 300; max-width: 720px; }
         .svc-arr { font-size: 1rem; color: var(--red); opacity: 0; transform: translateX(-8px); transition: opacity .3s, transform .3s; padding-top: 3px; flex-shrink: 0; }
 
         /* ── PROCESO ── */
@@ -164,22 +169,24 @@
         .step:first-child { border-top: 1px solid rgba(255,255,255,.05); }
         .step-n { font-family: 'Syne', sans-serif; font-size: .72rem; font-weight: 800; color: var(--red); min-width: 26px; padding-top: 2px; letter-spacing: 1px; }
         .step-text { flex: 1; }
-        .step-title { font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700; color: rgba(245,244,240,.85); margin-bottom: 4px; }
-        .step-desc { font-size: .82rem; color: rgba(245,244,240,.32); line-height: 1.7; font-weight: 300; }
+        .step-title:hover{ color: var(--white); opacity: 1; transform: translateX(10px); transition: 1s; }
+        .step-title { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 700; color: rgba(245,244,240,.85); margin-bottom: 4px; }
+        .step-desc { font-size: 82rem; color: rgba(245,244,240,.32); line-height: 1.7; font-weight: 300; }
         .step-line { position: absolute; left: 12px; top: 100%; width: 1px; height: 100%; background: rgba(224,26,0,.15); }
 
         /* ── OFERTA ── */
         #oferta { background: var(--dark); }
         .oferta-box { border: 1px solid rgba(224,26,0,.2); padding: 52px; position: relative; overflow: hidden; }
         .oferta-box::before { content: '360°'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); font-family: 'Syne', sans-serif; font-size: 12rem; font-weight: 800; color: rgba(224,26,0,.04); line-height: 1; pointer-events: none; }
-        .oferta-tag { font-size: .62rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); border: 1px solid rgba(224,26,0,.3); padding: 5px 14px; display: inline-block; margin-bottom: 22px; font-weight: 600; }
+        .oferta-tag { font-size: .82rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); border: 1px solid rgba(224,26,0,.3); padding: 5px 14px; display: inline-block; margin-bottom: 22px; font-weight: 600; }
         .oferta-title { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 3.5vw, 2.8rem); font-weight: 800; color: var(--white); margin-bottom: 16px; line-height: 1.05; }
-        .oferta-body { font-size: .9rem; color: rgba(245,244,240,.45); line-height: 1.85; max-width: 500px; margin-bottom: 32px; font-weight: 300; }
+        .oferta-body { font-size: 1.28rem; color: rgba(245,244,240,.45); line-height: 1.85; max-width: 600px; margin-bottom: 32px; font-weight: 300; }
 
         /* ── PITZON ── */
         #pitzon { background: #0a0e13; padding: 90px 0; }
+        .label{font-size: 35px; text-shadow: 0px 2px 13px #E01A00;}
         .pitzon-box { border: 1px solid rgba(255,255,255,.06); padding: 44px; display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
-        .pitzon-icon { font-size: 4.9rem; flex-shrink: 0; }
+        .pitzon-icon { font-size: 5.9rem; flex-shrink: 0; }
         .pitzon-body { flex: 1; min-width: 240px; }
         .pitzon-title { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
         .pitzon-desc { font-size: 1.2rem; color: rgba(245,244,240,.4); line-height: 1.8; font-weight: 300; }
@@ -187,10 +194,10 @@
         .btn-pitzon:hover { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.5); color: var(--white); }
 
         /* ── BAND ── */
-        #band { background: var(--red); padding: 88px 0; position: relative; overflow: hidden; }
+        #band { background: rgba(105, 42, 42, 0.934); padding: 88px 0; position: relative; overflow: hidden; }
         #band::after { content: 'MEDECAR'; position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Syne', sans-serif; font-weight: 800; font-size: 26vw; color: rgba(0,0,0,.06); white-space: nowrap; line-height: 1; pointer-events: none; }
         .band-title { font-family: 'Syne', sans-serif; font-size: clamp(1.7rem, 4.5vw, 3.4rem); font-weight: 800; color: var(--white); line-height: 1.05; }
-        .band-sub { font-size: .88rem; color: rgba(245,244,240,.65); margin-top: 12px; font-weight: 300; }
+        .band-sub { font-family:  'Syne',sans-serif; font-size: 1.99rem; color: rgba(0, 0, 0, 0.65); margin-top: 12px; font-weight: 300;width: 1000px; }
         .btn-band { background: var(--white); color: var(--red); font-size: .78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; border: none; padding: 16px 38px; text-decoration: none; display: inline-block; position: relative; z-index: 2; transition: background .25s, color .25s, transform .2s; }
         .btn-band:hover { background: var(--dark); color: var(--white); transform: translateY(-1px); }
 
@@ -198,13 +205,20 @@
         #contacto { background: var(--surface); }
         .c-row { display: flex; align-items: baseline; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
         .c-row:first-child { border-top: 1px solid rgba(255,255,255,.05); }
-        .c-lbl { font-size: .63rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); min-width: 88px; font-weight: 500; }
-        .c-val { font-size: .9rem; color: rgba(245,244,240,.55); font-weight: 300; }
+        .c-lbl { font-size: .93rem; letter-spacing: 3px; text-transform: uppercase; color: var(--red); min-width: 88px; font-weight: 500; }
+        .c-val { font-size: 1.2rem; color: rgba(245,244,240,.55); font-weight: 300; }
         .c-val a { color: rgba(245,244,240,.55); text-decoration: none; transition: color .2s; }
         .c-val a:hover { color: var(--white); }
 
         /* ── FOOTER ── */
-        footer { background: var(--dark); padding: 32px 0; border-top: 1px solid rgba(255,255,255,.05); }
+        footer { background: rgb(0, 0, 0); padding: 32px 0; border-top: 1px solid rgba(255,255,255,.05); }
+        .foot-brand img{ 
+            box-shadow: 2px 2px 19px #ff2200;
+    height: 40px; 
+    width: 260px; 
+    display: block;
+    border-radius: 10px;
+}
         .foot-brand { font-family: 'Syne', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: 1px; }
         .foot-brand em { color: var(--red); font-style: normal; }
         .foot-copy { font-size: .7rem; color: rgba(245,244,240,.2); letter-spacing: 1px; font-weight: 300; }
@@ -224,7 +238,8 @@
         .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
         .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
 
-        @media (max-width: 768px) {
+
+   @media (max-width: 768px) {
             section { padding: 80px 0; }
             .nav-links { display: none !important; }
             .hero-h1 { font-size: 2.5rem;width: 410px; }
@@ -283,7 +298,7 @@
     <div class="hero-scroll">Scroll</div>
     <div class="container hero-text">
         <p class="hero-eyebrow rv">Taller Automotriz — Medellín, Colombia</p>
-        <h1 class="hero-h1 rv d1">Mecánica Automotriz<br>Con Diagnóstico Claro<br><em>Y Evidencia</em></h1>
+        <h1 class="hero-h1 rv d1"><span class="mecanica">Mecánica Automotriz</span>Con Diagnóstico Claro<em>Y Evidencia</em></h1>
         <p class="hero-sub rv d2">En MedecaR Revisamos, Diagnosticamos Y Reparamos Tu Vehículo Con Un Proceso Transparente: Evidencia, Explicación Clara Y Autorización Antes De Intervenir.</p>
         <div class="d-flex gap-3 flex-wrap rv d3">
             <a href="https://wa.me/573017312645" target="_blank" class="btn-red">Agendar Revisión Por WhatsApp</a>
@@ -547,7 +562,7 @@
 <!-- ── PITZON ── -->
 <div id="pitzon">
     <div class="container rv">
-        <span class="label">Gestiona Tu Vehículo</spa>
+        <span class="label">Gestiona Tu Vehículo</span>
         <div class="pitzon-box">
             <div class="pitzon-icon">📱</div>
             <div class="pitzon-body">
@@ -620,7 +635,7 @@
 <!-- ── FOOTER ── -->
 <footer>
     <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
-        <div class="foot-brand">Mede<em>caR</em></div>
+        <div class="foot-brand"><img src="./Logo Medecar v2_page-0001.jpg" alt=""></div>
         <div class="foot-copy">Medellín, Colombia &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Todos Los Derechos Reservados</div>
     </div>
 </footer>
